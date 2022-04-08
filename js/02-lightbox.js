@@ -13,3 +13,8 @@ const imagesMarkUp = galleryItems.map(({ preview, original, description }) =>
 
 galleryEl.insertAdjacentHTML('afterbegin', imagesMarkUp);
 
+let lightbox = new SimpleLightbox(".gallery a", {
+    captionsData: "alt",
+    captionDelay: "250",
+    enableKeyboard: "true",
+});
