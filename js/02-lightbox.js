@@ -7,9 +7,9 @@ const galleryEl = document.querySelector('.gallery');
 
 
 const imagesMarkUp = galleryItems.map(({ preview, original, description }) =>
-    `<a class="gallery__item" href=${original}>
+    `<li><a class="gallery__item" href=${original}>
   <img class="gallery__image" src=${preview} alt=${description} />
-</a>`).join('');
+</a></li>`).join('');
 
 galleryEl.insertAdjacentHTML('afterbegin', imagesMarkUp);
 
